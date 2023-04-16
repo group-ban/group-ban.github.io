@@ -1,0 +1,138 @@
+@font-face {
+    font-family: Yekan;
+    src: url("../webfonts/Yekan.ttf");
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url("https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/fonts/webfonts/Vazirmatn-Bold.woff2");
+}
+
+body {
+    font-family: Yekan;
+    text-align: center;
+    background-color: #0dff9a;
+}
+
+a {
+    text-decoration: none;
+    color: #ff0d0d;
+}
+
+a:hover {
+    color: rgba(10, 169, 243, 0.966);
+}
+
+.description {
+    text-align: center;
+    font-family: Vazir;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.question-box {
+    border-radius: 10px;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+}
+
+
+.question-box p {
+    color: #ff9b04;
+    font-family: Vazir;
+    font-size: 20px;
+}
+
+.profile-box {
+    border-radius: 10px;
+    display: inline-block;
+    background-color: #fafbfc;
+    padding: 50px;
+    margin-bottom: 30px;
+}
+
+
+.profile-box p {
+    color: #000000;
+    font-family: Vazir;
+    font-size: 20px;
+}
+
+.profile-box button {
+    font-family: Vazir;
+    font-size: 13px;
+    color:rgb(255, 255, 255);
+    background-color: #238ff3;
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.profile-box button a {
+    color: rgb(255, 255, 255);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #d3f803;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #bcff04;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+  
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.i-page {
+    border-radius: 10px;
+    border: 2px solid rgb(200, 255, 0);
+}
