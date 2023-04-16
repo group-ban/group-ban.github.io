@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>گروه بان - دستورات</title>
+  <link rel="icon" href="dist/img/GB.png">
+  <link rel="stylesheet" href="dist/css/commands.css">
+  <link rel="stylesheet" href="dist/css/commands-2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
+</head>
+
+<body onload="loaderFunction()">
+
+  <div id="loader">
+    <div class="loading">
+      <span></span>
+    </div>
+  </div>
+
+
+  <div id="page">
+    <nav>
+      <div class="logo noselect">
+        <img class="noselect" src="dist/img/GB.png"> گروه بان
+      </div>
+
+      <div class="openMenu noselect"><i class="fa fa-bars"></i></div>
+      <ul class="mainMenu noselect">
+        <li><a href="/"><i class="fas fa-home"></i> خانه</a></li>
+        <li><a class="invite noselect" href="/invite" target="_none">دعوت ربات</a></li>
+        <div class="closeMenu noselect"><i class="fa fa-times"></i></div>
+      </ul>
+    </nav>
+
+
+
+    <div class="container clear noselect">
+      <div class="row wrapper">
+
+        <span class="collapse" onclick="closeSidePanel()"><i class="fas fa-caret-left"></i></span>
+        <span class="expand" onclick="openSidePanel()"><i class="fas fa-caret-right"></i></span>
+
+        <div class="sidepanel">
+          <div class="divider left"></div>
+
+          <a class="title" href="#gettingstarted">مقدمه</a>
+
+          <div class="divider left"></div>
+
+          <a class="title" href="#commands">دستورات</a>
+
+          <a class="section" href="#group-commands">گروه</a>
+          <a class="sub-section" href="#group-commands-main">اصلی</a>
+          <a class="sub-section" href="#group-commands-fari">فرعی</a>
+          <a class="section" href="#pv-commands">شخصی</a>
+
+          <div class="divider left"></div>
+
+          <a class="title" href="#premium">پریمیوم (ویژه)</a>
+
+          <div class="space double"></div>
+
+        </div>
+
+        <div dir="ltr" class="right-col">
+          <h1 id="gettingstarted">مقدمه</h1>
+          <p>ما همواره در تلاش بوده و هستیم تا گروهی آرام را برای تمامی همراهان مجموعه گروه بان بسازیم</p>
+
+          <div id="group-commands" class="divider" style="width:24%; margin:30px 0;"></div>
+
+          <h1>دستورات گروه</h1>
+          <div>سینتکس:
+            <ul>
+              <li><span class="codeBlock">
+                  <>
+                </span> : آرگومان های نیازمند</li>
+              <li><span class="codeBlock">[ ]</span> : آرگومان های غیر لازم</li>
+              <li><span class="codeBlock">( )</span> : نام دیگر دستور</li>
+            </ul>
+          </div>
+
+          <h2 id="group-commands-main">اصلی</h2>
+          <div>
+            <ul>
+              <li class="collapsible">ستاپ</li>
+              <div class="cmdCollapse">
+                توضیحات: کانفیگ ربات و تنظیم عملکرد ها
+                <br>
+                Usage : <span class="codeBlock">/setup</span>
+                <br>
+                <p style="color: #fa2c2c;font-size: 13px;">دسترسی ها: ادمین</p>
+              </div>
+              <li class="collapsible">پاسخگوی خودکار</li>
+              <div class="cmdCollapse">
+                توضیحات:  دریافت راهنمای بخش پاسخگویی خودکار و لیست دستورات بخش
+                <br>
+                Usage : <span class="codeBlock">/auto-answer (/auto_answer)</span>
+                <br>
+                <p style="color: #fa2c2c;font-size: 13px;">دسترسی ها: ادمین</p>
+              </div>
+              <li class="collapsible">ضد کلمات</li>
+              <div class="cmdCollapse">
+                توضیحات: دریافت راهنمای بخش ضد کلمات و لیست دستورات
+                <br>
+                Usage : <span class="codeBlock">/anti_word (/anti-word)</span>
+                <br>
+                <p style="color: #fa2c2c;font-size: 13px;">دسترسی ها: ادمین</p>
+              </div>
+            </ul>
+          </div>
+
+          <h2 id="group-commands-fari">فرعی</h2>
+          <div>
+            <ul>
+              <li class="collapsible">اطلاعات گروه</li>
+              <div class="cmdCollapse">
+                توضیحات: دریافت اطلاعات کلی و ادمینان گروه
+                <br>
+                Usage : <span class="codeBlock">/groupinfo</span>
+              </div>
+            </ul>
+          </div>
+
+          <div class="divider" style="width:24%; margin:30px 0;"></div>
+
+          <h1 id="premium">پریمیوم</h1>
+          <p>با فعال سازی پریمیوم ربات امکان داشتن امکانات ویژه فعال خواهد شد</p>
+          <div class="doublespace"></div>
+          <div class="divider" style="width:24%; margin:30px 0;"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="dist/js/commands.js"></script>
+  <script src="dist/js/commands-2.js"></script>
+</body>
+
+</html>
