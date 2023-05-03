@@ -7,6 +7,7 @@
         <meta name="description" content="گروه بان؛ برترین ربات مدیریت گروه در بله">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="dist/css/invite.css">
+        <script src="https://use.fontawesome.com/fe459689b4.js"></script>
         <link rel="icon" href="dist/img/GB.png">
     </head>
     <body>
@@ -17,27 +18,32 @@
         <h1>دعوت ربات گروه بان به چت</h1>
 
         <div class="description" style="font-size: 20px;">
-            <p style="display: inline-block;">در ابتدا به جهت افزودن ربات در گروه نیاز است تا ربات را به مخاطبین خود اضافه کنیم
-                این کار تنها از طریق پنل زیر و یا نسخه وب بله امکان پذیر است و شما میتوانید با زدن دکمه مشاهده در وب اپلیکیشن بله و افزودن ربات به مخاطبین این کار را انجام دهید</p>
+            <p style="display: inline-block;">در ابتدا برای اضافه کردن ربات به گروه، نیاز است تا آن را به مخاطبین خود اضافه کنیم. شما میتوانید از طریق پنل زیر و انتخاب گزینه مشاهده در وب اپلیکیشن بله وارد پروفایل ربات در وب بله شوید. حال در این بخش با کلیک بر روی گزینه افزودن به مخاطبین این رویه را پیش بگیرید</p>
             <div class="profile-box">
                 <img width="80px" style="border-radius: 50px;" src="dist/img/GB.png">
                 <p>گروه بان</p>
-                <br>
                 <p>برترین ربات مدیریت گروه در بله با قابلیت های فراوان</p>
                 <button><a target="_blank" href="https://web.bale.ai/@groupbanbot">مشاهده در وب اپلیکیشن بله</a></button>
             </div>
             <br/>
 
-            <p style="color: brown">در نسخه های جدید بله، تنها از طریق گفته شده امکان اضافه کردن ربات به مخاطبین وجود دارد</p>
-
-            <p>حال تنها کافیست وارد جزئیات گروه مورد نظر شده و مانند کاربر عادی ربات را به گروه اضافه کنید</p>
+            <p>حال مانند کاربران دیگر، ربات را به گروه اضافه کنید. توضیحات در بخش گروه توسط بات در بدو ورود داده خواهد شد</p>
+            
+            <div class="warning-box">
+                <img src="https://l.bale.ai/Danger.67bfcc3e.svg" width="100px">
+                <p style="color: brown">در نسخه های جدید بله، تنها از طریق نسخه وب امکان اضافه کردن ربات به مخاطبین وجود دارد</p>
+            </div>
         </div>
 
         <br>
         <div class="question-box">
             <img style="display: none;" src="dist/img/invite/thanks.png">
-            <p>گروه بان رو به گروهت اضافه کردی؟</p>
-            <label class="switch"><input type="checkbox"><span class="slider round"></span></label>
+            <img width="100px" style="display: none;" src="dist/img/invite/cancel.png">
+            <p id="qu-text">گروه بان رو به گروهت اضافه کردی؟</p>
+            <div id="qu-buttons">
+                <button class="qu-btn" id="like" onclick="onSelectSurvey(true)"><i class="fa fa-thumbs-up fa-lg" aria-hidden="true"></i></button>
+                <button class="qu-btn" id="dislike" onclick="onSelectSurvey(false)"><i class="fa fa-thumbs-down fa-lg" aria-hidden="true"></i></button>
+            </div>
         </div>
 
     <script src="dist/js/invite.js"></script>

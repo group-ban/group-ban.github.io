@@ -37,6 +37,13 @@ a:hover {
     padding: 50px;
 }
 
+.warning-box {
+    border-radius: 10px;
+    display: inline-block;
+    background-color: #f7cd98;
+    padding: 20px;
+    margin-bottom: 30px;
+}
 
 .question-box p {
     color: #ff9b04;
@@ -61,7 +68,7 @@ a:hover {
 
 .profile-box button {
     font-family: Vazir;
-    font-size: 13px;
+    font-size: 17px;
     color:rgb(255, 255, 255);
     background-color: #238ff3;
     border: none;
@@ -135,4 +142,24 @@ input:checked + .slider:before {
 .i-page {
     border-radius: 10px;
     border: 2px solid rgb(200, 255, 0);
+}
+
+.qu-btn {
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    background-color: #fafbfc;
+    font-size: 25px;
+}
+
+#like:hover {
+    color: rgb(54, 255, 4);
+}
+
+#dislike:hover {
+    color: #ff0d0d;
+}
+
+.qu-btn:focus {
+    outline: none;
 }
